@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container my-5">
+        <form>
+            <div class="form-group w-50">
+                <label for="diemChuan">Điểm Chuẩn của hội đồng</label>
+                <input type="text" class="form-control" id="diemChuan" placeholder="Nhập điểm chuẩn">
+            </div>
+            <div class="form-group w-50">
+                <label for="diemMonA">Điểm môn A</label>
+                <input type="text" class="form-control" id="diemMonA">
+            </div>
+            <div class="form-group w-50">
+                <label for="diemMonB">Điểm môn B</label>
+                <input type="text" class="form-control" id="diemMonB">
+            </div>
+            <div class="form-group w-50">
+                <label for="diemMonC">Điểm môn C</label>
+                <input type="text" class="form-control" id="diemMonC">
+            </div>
+            <div class="form-group w-50">
+                <label for="diemArea">Điểm khu vực</label>
+                <select class="form-control" id="diemArea">
+                  <option>Chọn khu vực</option>
+                  <option value="2">A</option>
+                  <option value="1">B</option>
+                  <option value="0.5">C</option>
+                  <option value="0">X</option>
+                </select>
+                <small class="form-text text-muted">Nhập X nếu <span class="text-danger">không</span> thuộc khu vực ưu tiên</small>
+              </div>
+              <div class="form-group w-50">
+                <label for="diemDTuong">Đối tượng</label>
+                <select class="form-control" id="diemDTuong">
+                  <option>Chọn đối tượng</option>
+                  <option value="2.5">1</option>
+                  <option value="1.5">2</option>
+                  <option value="1">3</option>
+                  <option value="0">0</option>
+                </select>
+                <small class="form-text text-muted">Nhập 0 nếu <span class="text-danger">không</span> thuộc đối tượng ưu tiên</small>
+              </div>
+            <button id="btnThongbao" type="button" class="btn btn-primary">Thông báo</button>
+
+            <p id="txtBtn" class="mt-5"></p>
+        </form>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous">
+    </script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
